@@ -6,7 +6,9 @@ $wildcardcolor:#e6e6e8;
 $fontFam:'Ubuntu', sans-serif;
 $fontFam2: 'Nunito', sans-serif;
 $fontFam3: 'Exo 2', sans-serif;
-$fontFam4: 'Concert One', cursive;
+$fontFam4: 'Concert One', serif;
+$fontFam5: 'Karla', sans-serif;
+$fontFam6: 'Playfair Display', serif;
 
 #container {
   width: 100%;
@@ -15,10 +17,10 @@ $fontFam4: 'Concert One', cursive;
 
   #topbar {
     color: $fontTextColor;
-    background-color: $barColor;
+    
     width: 100%;
     height: 50px;
-    opacity: 0.5;
+  
 
 
     #navbar {
@@ -26,11 +28,53 @@ $fontFam4: 'Concert One', cursive;
 
       .nav-element {
         float: left;
-        margin: 0px 5px 0 5px;
-
-        a {
-          color: $fontTextColor;
+        margin: 10px 10px 10px 10px;
+        &:last-child{
+          margin: 10px 15px 10px 10px;
         }
+
+        
+        a {
+          font-size: 18px;
+          color: $wildcardcolor;
+          font-family: $fontFam5;
+          text-decoration: none;
+          border: 1px solid;
+          border-color: $backgroundColor;
+          border-radius: 10%;
+          padding: 5px;
+        }
+        a:hover{
+          font-size: 18px;
+          color: $fontTextColor;
+          font-family: $fontFam5;
+          text-decoration: none;
+          border: 1px solid;
+          border-color: $fontTextColor;
+          border-radius: 10%;
+          padding: 5px;
+        }
+        a:active{
+          font-size: 18px;
+          color: $fontTextColor;
+          font-family: $fontFam5;
+          text-decoration: none;
+          border: 1px solid;
+          border-color: $fontTextColor;
+          border-radius: 10%;
+          padding: 5px;
+        }
+        a.active{
+          font-size: 18px;
+          color: $fontTextColor;
+          font-family: $fontFam5;
+          text-decoration: none;
+          border: 1px solid;
+          border-color: $fontTextColor;
+          border-radius: 10%;
+          padding: 5px;
+        }
+
       }
     }
 
@@ -47,6 +91,6 @@ $fontFam4: 'Concert One', cursive;
   }
 }
 body {
-  background-color: $wildcardcolor;
+  background-color: $barColor;
   font-family: $fontFam3;
 }
