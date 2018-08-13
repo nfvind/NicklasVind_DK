@@ -1,7 +1,7 @@
-$fontTextColor: #c43235;
-$backgroundColor:#300032;
-$barColor: #06000a;
-$wildcardcolor:#e6e6e8;
+$ColorOne: #c43235;
+$ColorTwo:#300032;
+$ColorThree: #06000a;
+$ColorFour:#e6e6e8;
 
 $fontFam:'Ubuntu', sans-serif;
 $fontFam2: 'Nunito', sans-serif;
@@ -13,14 +13,76 @@ $fontFam6: 'Playfair Display', serif;
 #container {
   width: 100%;
   height: 100vh;
-  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  /*background-image: url("../images/planetsInSpace.jpg");*/
+  background: linear-gradient($ColorTwo,$ColorThree);
+
+  .expressed {
+    color: $ColorOne;
+  }
+
+  #content {
+    height: 100%;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 64px;
+    display: inline;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .content-element {
+
+    .wrapper {
+      a.frontpage.button {
+        margin: 5px;
+        text-decoration: none;
+        color: $ColorFour;
+        padding: 10px;
+        border-radius: 5px;
+        border-color: $ColorFour;
+        border: 1px solid;
+        width: 200px;
+
+        &:first-child {
+          background-color: $ColorOne;
+          border-color: $ColorOne;
+        }
+
+        &:hover {
+          background-color: $ColorOne;
+          border-color: $ColorOne;
+        }
+      }
+    }
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto;
+
+    .footer-element {
+      font-size: 12px;
+      color: $ColorFour;
+    }
+  }
 
   #topbar {
-    color: $fontTextColor;
-    
-    width: 100%;
+    color: $ColorOne;
+    /*width: 100%;*/
     height: 50px;
-  
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 
 
     #navbar {
@@ -29,68 +91,74 @@ $fontFam6: 'Playfair Display', serif;
       .nav-element {
         float: left;
         margin: 10px 10px 10px 10px;
-        &:last-child{
+
+        &:last-child {
           margin: 10px 15px 10px 10px;
         }
 
-        
+
         a {
-          font-size: 18px;
-          color: $wildcardcolor;
+          font-size: 16px;
+          color: $ColorFour;
           font-family: $fontFam5;
           text-decoration: none;
           border: 1px solid;
-          border-color: $backgroundColor;
-          border-radius: 10%;
-          padding: 5px;
-        }
-        a:hover{
-          font-size: 18px;
-          color: $fontTextColor;
-          font-family: $fontFam5;
-          text-decoration: none;
-          border: 1px solid;
-          border-color: $fontTextColor;
-          border-radius: 10%;
-          padding: 5px;
-        }
-        a:active{
-          font-size: 18px;
-          color: $fontTextColor;
-          font-family: $fontFam5;
-          text-decoration: none;
-          border: 1px solid;
-          border-color: $fontTextColor;
-          border-radius: 10%;
-          padding: 5px;
-        }
-        a.active{
-          font-size: 18px;
-          color: $fontTextColor;
-          font-family: $fontFam5;
-          text-decoration: none;
-          border: 1px solid;
-          border-color: $fontTextColor;
+          border-color: $ColorTwo;
           border-radius: 10%;
           padding: 5px;
         }
 
+        a:hover {
+          /* font-size: 18px;*/
+          color: $ColorOne;
+          font-family: $fontFam5;
+          text-decoration: none;
+          border: 1px solid;
+          border-color: $ColorOne;
+          border-radius: 10%;
+          padding: 5px;
+        }
+
+        a:active {
+          /* font-size: 18px;*/
+          color: $ColorThree;
+          font-family: $fontFam5;
+          text-decoration: none;
+          border: 1px solid;
+          border-color: $ColorOne;
+          border-radius: 10%;
+          padding: 5px;
+        }
+
+        a.active {
+          /* font-size: 18px;*/
+          color: $ColorOne;
+          font-family: $fontFam5;
+          text-decoration: none;
+          border: 1px solid;
+          border-color: $ColorOne;
+          border-radius: 10%;
+          padding: 5px;
+        }
       }
     }
 
     #title {
-      float:left;
-      margin:0px 5px 0px 5px;
-      h3{
+      float: left;
+      margin: 0px 5px 0px 5px;
+
+      h3, h2 {
         //margin:0;
         //padding:0;
-        display:inline;
-        font-size:40px;
+        display: inline;
       }
     }
   }
 }
+
 body {
-  background-color: $barColor;
+  /*background-color: $ColorThree;*/
   font-family: $fontFam3;
+  color: $ColorFour;
+  background-image: url("../images/planetsInSpace.jpg");
 }

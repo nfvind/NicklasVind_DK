@@ -43,5 +43,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0"
   }
 }
