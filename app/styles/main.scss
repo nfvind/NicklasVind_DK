@@ -68,10 +68,25 @@ $fontFam6: 'Playfair Display', serif;
     flex-direction: row;
     justify-content: space-between;
     margin-top: auto;
+    margin-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
 
     .footer-element {
       font-size: 12px;
       color: $ColorFour;
+      a {
+        text-decoration:none;
+        &:visited{
+          color:$ColorFour;
+        }
+        &:hover{
+          color:$ColorOne;
+        }
+      }
+      .footer-item{
+        margin:0 5px 0 5px;
+      }
     }
   }
 
