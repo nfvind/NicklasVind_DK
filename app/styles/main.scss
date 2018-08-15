@@ -12,7 +12,7 @@ $fontFam6: 'Playfair Display', serif;
 
 #container {
   width: 100%;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   /*background-image: url("../images/planetsInSpace.jpg");*/
@@ -26,6 +26,9 @@ $fontFam6: 'Playfair Display', serif;
     height: 100%;
     text-align: center;
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 
   h1 {
@@ -35,11 +38,48 @@ $fontFam6: 'Playfair Display', serif;
 
   h4 {
     font-size: 18px;
+    display: inline;
+  }
+
+  h5 {
+    display: inline;
   }
 
   .content-element {
+    margin: auto;
+
+
+    .textLeft {
+      text-align: left;
+    }
+
+    .quarterbox {
+      width: 25%;
+      height: 100%;
+      margin: 0 10px 0 10px;
+    }
+
+    &.opacity {
+      opacity: 0.4;
+    }
+
+    &.topmargin {
+      margin-top: 10px;
+    }
 
     .wrapper {
+      display: flex;
+      justify-content: center;
+
+      &.column {
+        flex-direction: column;
+      }
+
+      &.row {
+        flex-direction: row;
+      }
+
+
       a.frontpage.button {
         margin: 5px;
         text-decoration: none;
@@ -68,24 +108,29 @@ $fontFam6: 'Playfair Display', serif;
     flex-direction: row;
     justify-content: space-between;
     margin-top: auto;
-    margin-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
+    padding: 20px;
+    background-color: $ColorTwo;
 
     .footer-element {
-      font-size: 12px;
+      font-size: 14px;
       color: $ColorFour;
+      margin-bottom: 5px;
+
       a {
-        text-decoration:none;
-        &:visited{
-          color:$ColorFour;
+        text-decoration: none;
+        color: $ColorFour;
+
+        &:visited {
+          color: $ColorFour;
         }
-        &:hover{
-          color:$ColorOne;
+
+        &:hover {
+          color: $ColorOne;
         }
       }
-      .footer-item{
-        margin:0 5px 0 5px;
+
+      .footer-item {
+        margin: 0 5px 0 5px;
       }
     }
   }
