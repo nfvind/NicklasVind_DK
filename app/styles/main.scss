@@ -12,11 +12,39 @@ $fontFam6: 'Playfair Display', serif;
 
 #container {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   /*background-image: url("../images/planetsInSpace.jpg");*/
   background: linear-gradient($ColorTwo,$ColorThree);
+
+  &.contactPage {
+    #content {
+
+
+      .contactContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .contactinfo-desc{
+          width:25%;
+        }
+         .contactinfo-tlf {
+          width: 25%;
+        }
+        .contactinfo-tlf {
+          width: 25%;
+        }
+
+        .contactinfo-email {
+          width: 25%;
+        }
+
+        .contactinfo-lnkdin {
+          width: 25%;
+        }
+      }
+    }
+  }
 
   .expressed {
     color: $ColorOne;
@@ -25,10 +53,9 @@ $fontFam6: 'Playfair Display', serif;
   #content {
     height: 100%;
     text-align: center;
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    // margin: auto;
   }
 
   h1 {
@@ -54,9 +81,10 @@ $fontFam6: 'Playfair Display', serif;
     }
 
     .quarterbox {
-      width: 25%;
+      width: 20%;
       height: 100%;
       margin: 0 10px 0 10px;
+      text-align: center;
     }
 
     &.opacity {

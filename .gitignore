@@ -4,3 +4,6 @@ dist
 bower_components
 test/bower_components
 .vs/VSWorkspaceState.json
+.vs/slnx.sqlite
+.vs/config/applicationhost.config
+.vs/NicklasVind_DK/v15/.suo
