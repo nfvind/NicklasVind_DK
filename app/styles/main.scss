@@ -23,7 +23,8 @@ $fontFam6: 'Playfair Display', serif;
 
       .contactContainer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         .contactinfo-desc{
           width:25%;
