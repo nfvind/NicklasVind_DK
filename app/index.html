@@ -12,7 +12,9 @@
   <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
  <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -34,20 +36,23 @@
     <div id="topbar">
       <div id="title"><h2>NICKLASVIND.DK</h2></div>
       <div id="navbar">
-        <div class="nav-element"><a href="#" class="nav-link">Forside</a></div>
+        <div class="nav-element">
+          <a href="#" id="MenuBar"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+        <!--<div class="nav-element"><a href="#" class="nav-link">Forside</a></div>
         <div class="nav-element"><a href="#" class="nav-link">CV</a></div>
         <div class="nav-element"><a href="#" class="nav-link">Kode</a></div>
-        <div class="nav-element"><a href="/subpages/kontakt.html" class="nav-link">Kontakt</a></div>
+        <div class="nav-element"><a href="/subpages/kontakt.html" class="nav-link">Kontakt</a></div>-->
       </div>
     </div>
     <div id="content">
 
-      <div class="content-element"><h4>Serviceminded Fullstack developer med fokus på frontend, Professionel kundepleje og Salg</h4></div>
+      <div class="content-element"><h4>Serviceminded Fullstack developer med fokus på  Professionel kundepleje og Salg</h4></div>
       <div class="content-element"><h1>Nicklas Folden Vind</h1></div>
 
       <div class="content-element expressed"><h5>C#.Net, MVC, Javascript, CSS & HTML, SQL, Sharepoint & Sitecore </h5></div>
       <div class="content-element topmargin">
-        <img src="images/Nicklas_column.png" id="frontpageImg" class="img" width="75%" height="75%" />
+        <img src="images/Nicklas_column.png" id="frontpageImg" class="img" width="75%" height="75%" style="display: none;" />
       </div>
       <div class="content-element">
         <div class="wrapper row">
@@ -60,7 +65,7 @@
 
         <div class="wrapper row textLeft">
           <!--<div class="quarterbox"><p>Team oriented player with focus on winning and doing a 110% job that will satisfy customers and everyone in the project. Iron will and good problem solving skills even under pressure.</p></div>-->
-          <div class="quarterbox">
+          <div class="quarterbox" style="display: none;">
             <p>
               <span class="fatsub">Skills & Endorsements:</span>
               ASP.NET MVC,
@@ -91,13 +96,13 @@
         </div>
       </div>
 
-      <div id="footer">
-        <div class="footer-element">Made by Nicklas F. Vind - v.0.4</div>
-        <div class="footer-element">Copyright 2018 Nicklas F. Vind. All Rights Reserved.</div>
-        <div class="footer-element">Forbind via<a href="#" class="footer-item"><i class="fab fa-facebook"></i></a><a href="#" class="footer-item"><i class="fab fa-twitter-square"></i></a><a href="#" class="footer-item"><i class="fab fa-linkedin"></i></a><a href="#" class="footer-item"><i class="fab fa-instagram"></i></a></div>
-      </div>
+     
     </div>
-
+    <div id="footer">
+      <div class="footer-element">Made by Nicklas F. Vind - v.0.4</div>
+      <div class="footer-element">Copyright 2018 Nicklas F. Vind. All Rights Reserved.</div>
+      <div class="footer-element">Forbind via<a href="#" class="footer-item"><i class="fab fa-facebook"></i></a><a href="#" class="footer-item"><i class="fab fa-twitter-square"></i></a><a href="#" class="footer-item"><i class="fab fa-linkedin"></i></a><a href="#" class="footer-item"><i class="fab fa-instagram"></i></a></div>
+    </div>
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <!-- build:js scripts/vendor.js -->
       <!-- bower:js -->
@@ -107,6 +112,7 @@
       <!-- endbuild -->
       <!-- build:js scripts/main.js -->
       <script src="scripts/main.js"></script>
+      <script src="scripts/lib/nfv.master.js"></script>
       <!-- endbuild -->
 </body>
 </html>
