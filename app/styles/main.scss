@@ -1,7 +1,7 @@
-$ColorOne: #c43235;
+$ColorOne: #95a5a6;
 $ColorTwo:#300032;
 $ColorThree: #06000a;
-$ColorFour:#e6e6e8;
+$ColorFour:#7f8c8d;
 
 $fontFam:'Ubuntu', sans-serif;
 $fontFam2: 'Nunito', sans-serif;
@@ -256,7 +256,11 @@ $fontFam6: 'Playfair Display', serif;
     }
   }
 }
-
+.content-element {
+  #frontpageImg {
+    border-radius: 5%;
+  }
+}
 body {
   /*background-color: $ColorThree;*/
   font-family: $fontFam3;
