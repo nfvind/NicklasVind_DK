@@ -1,9 +1,11 @@
+# dependencies
 node_modules
-dist
-.tmp
 bower_components
-test/bower_components
-.vs/VSWorkspaceState.json
-.vs/slnx.sqlite
-.vs/config/applicationhost.config
-.vs/NicklasVind_DK/v15/.suo
+
+# compiled output
+/dist
+/.tmp
+
+# System Files
+.DS_Store
+Thumbs.db
