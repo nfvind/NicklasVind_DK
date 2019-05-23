@@ -43,17 +43,20 @@ h1,h2,h3 {
 }
 
 /* Custom page header */
+
 .header {
   padding-bottom: 1rem;
-  display: flex;
+  flex-grow: 1;
   img {
     float: left;
-    height: 12%;
-    width:12%;
+    height: 15%;
+    width:15%;
+    margin-top: 9px;
+    margin-right: 10px;
   }
   h1{
-    margin-left:20px;
     font-size: 4rem;
+    margin: 3% 0 0 0;
   }
 
 }
@@ -67,14 +70,16 @@ h1,h2,h3 {
 
 }
 aside{
-  position: absolute;
-  right:5%;
-  top:5%;
-  width: 25%;
-  height: auto;
+  flex-grow: 1;
+align-self: flex-end;
+  height: 100%;
+  width:10%;
+
   /*background-color: #2D2E3B;*/
   #me{
     border-radius: 50%;
+    margin: 0 auto;
+    display: block;
   }
 .about{
   margin-top: 20px;
@@ -91,82 +96,50 @@ aside{
 
 }
 
-/* Custom page footer */
-
-
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
-}
-.container-narrow > hr {
-  margin: 2rem 0;
-}
 article.intro {
   width: 50%;
 }
 .container {
-
+  display: flex;
+flex-flow: row wrap ;
+  flex-direction: row;
   padding: 0;
   margin: 10px 0 0 10px;
     .header{
-      .nav-pills{
-        .nav-link{
-          color: #f4efe2;
-        }
-          .nav-link{
+      align-self: flex-start;
 
-            &:visited{
-              color: #f4efe2;
-            }
-
-            &.active{
-              color: #232323;
-              background-color: #f4efe2;
-            }
-
-            color: #f4efe2;
-          }
-    }
   }
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
+.main {
+  flex-grow: 1;
   text-align: center;
+  align-self: center;
+
+  height: 100%;
 
   background:none;
 }
-.jumbotron .btn {
-
-  font-size: 1.5rem;
-
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
-}
-.marketing p + h4 {
-  margin-top: 1.5rem;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
+@media all and (min-width: 200px) and (max-width:600px)  {
   .header {
-    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    flex-grow: 1;
+    width: 100%;
+    h1 {
+      font-size: 2rem;
+    }
+    img #codepandalogo{
+      margin-top: 9px;
+      margin-right: 10px;
+
+    }
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  aside #me{
+    display: block;
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+    height: 50%;
   }
 }
