@@ -5,11 +5,33 @@
   padding: 0.2em 0;
 }
 
+p {
+  color: #F1EFE7;
+}
 /* Space out content a bit */
 body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+
   background-color: #232323;
+
+}
+body:after{
+  background-image: url("../images/bg_me.jpg");
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1,h2,h3 {
+  font-family: 'Titan One', cursive;
+
+  color:#f4efe2;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -23,7 +45,17 @@ body {
 /* Custom page header */
 .header {
   padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
+  display: flex;
+  img {
+    float: left;
+    height: 12%;
+    width:12%;
+  }
+  h1{
+    margin-left:20px;
+    font-size: 4rem;
+  }
+
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -32,14 +64,35 @@ body {
   margin-bottom: 0;
   line-height: 3rem;
   color:#f4efe2;
+
+}
+aside{
+  position: absolute;
+  right:5%;
+  top:5%;
+  width: 25%;
+  height: auto;
+  /*background-color: #2D2E3B;*/
+  #me{
+    border-radius: 50%;
+  }
+.about{
+  margin-top: 20px;
+  p{
+    font-family: 'Lato', sans-serif;
+    //font-family: 'Voltaire', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
+    b{
+      font-weight: bold;
+    }
+  }
+}
+
+
 }
 
 /* Custom page footer */
-.footer {
-  padding-top: 1.5rem;
-  color: #f4efe2;
-  border-top: .05rem solid #e5e5e5;
-}
+
 
 /* Customize container */
 @media (min-width: 48em) {
@@ -50,25 +103,43 @@ body {
 .container-narrow > hr {
   margin: 2rem 0;
 }
-.container .nav-pills .nav-item .nav-link
-{
-  color:#232323;
-  a{
-    color: #232323;
-  }
-  &.active 
-  {
-    background-color: #f4efe2;
+article.intro {
+  width: 50%;
+}
+.container {
+
+  padding: 0;
+  margin: 10px 0 0 10px;
+    .header{
+      .nav-pills{
+        .nav-link{
+          color: #f4efe2;
+        }
+          .nav-link{
+
+            &:visited{
+              color: #f4efe2;
+            }
+
+            &.active{
+              color: #232323;
+              background-color: #f4efe2;
+            }
+
+            color: #f4efe2;
+          }
+    }
   }
 }
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-  background-color: #232323;
+
+  background:none;
 }
 .jumbotron .btn {
-  padding: .75rem 1.5rem;
+
   font-size: 1.5rem;
 
 }
