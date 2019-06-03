@@ -41,7 +41,22 @@ h1,h2,h3 {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-
+.skills{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  .skillset{
+    &:first-child{
+      margin-left: 0;
+    }
+    color:#F1EFE7;
+    margin-left: 5px;
+    i{
+      font-size: 3rem;
+    }
+  }
+}
 /* Custom page header */
 
 .header {
@@ -92,7 +107,19 @@ align-self: flex-end;
     }
   }
 }
-
+.contactCard {
+  h3 {
+    font-family: 'Lato', sans-serif;
+  }
+  p{
+    font-family: 'Open Sans', sans-serif;
+    color:#F1EFE7;
+  }
+  i{
+    color: #F1EFE7;
+    margin-right: 5px;
+  }
+}
 
 }
 
