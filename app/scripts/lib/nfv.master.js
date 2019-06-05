@@ -1,4 +1,8 @@
+
 var NFV = NFV || {};
+NFV.log = function _log(log){
+  console.log(log);
+};
 NFV.Master =  NFV.Master|| {};
 var page = (function() {
 
@@ -15,17 +19,38 @@ var page = (function() {
         return isCorrectPage;  
     };
     var _frontPage = function frontpage() {
-        var img = $('#frontpageImg');
-
-        var onStart = function onStart() {
-            img.show('slow');
-
-        };
-        onStart();
+          var element = function _element(elementToFind){
+          var objToGive;
+            if(Modernizr.addTest('hasJquery','jQuery' in window)) {
+            var $jqueryObj = $('body').find(elementToFind);
+            objToGive = $jqueryObj;
+          }else{
+              var normalObj;
+              if (elementToFind.includes('#'))
+              {
+                normalObj = document.getElementById(elementToFind);
+              }else if(elementToFind.include('.'))
+              {
+                normalObj = document.getElementsByClassName(elementToFind);
+              }else {
+                normalObj = document.getElementsByTagName(elementToFind);
+              }
+              if(normalObj === undefined || normalObj === null){
+                NFV.log('Object empty');
+                objToGive = 'error reaching element : '+elementToFind;
+              }else{
+                objToGive = normalObj;
+              }
+          }
+            return objToGive;
+          };
+          return {
+            getElement:element
+          }
     };
 
     return {
         test:test,
-        frontpage:_frontPage
+      frontPage:_frontPage
     };
 })();
