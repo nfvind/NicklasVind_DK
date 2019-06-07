@@ -14,20 +14,7 @@ body {
   background-color: #232323;
 
 }
-body:after{
-  background-image: url("../images/bg_me.jpg");
-  content : "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity : 0.2;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 h1,h2,h3 {
   font-family: 'Titan One', cursive;
 
@@ -42,16 +29,18 @@ h1,h2,h3 {
   padding-left: 1rem;
 }
 .skills{
+  margin-left: 20px;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap:wrap;
-  justify-content: center;
+  justify-content:start;
   .skillset{
     &:first-child{
       margin-left: 0;
     }
     color:#F1EFE7;
     margin-left: 5px;
+    margin-bottom: 18px;
     i{
       font-size: 3rem;
     }
