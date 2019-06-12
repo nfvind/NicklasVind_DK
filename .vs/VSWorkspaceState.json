@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\test"
+    "\\app\\scripts",
+    "\\app\\scripts\\lib",
+    "\\app\\styles"
   ],
-  "SelectedNode": "\\package-lock.json",
+  "SelectedNode": "\\gulpfile.js",
   "PreviewInSolutionExplorer": false
 }
