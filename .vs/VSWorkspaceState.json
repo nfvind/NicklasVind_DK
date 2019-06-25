@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\images",
     "\\app\\scripts",
     "\\app\\scripts\\lib",
     "\\app\\styles"
   ],
-  "SelectedNode": "\\gulpfile.js",
+  "SelectedNode": "\\app\\images\\pandahaven.jpg",
   "PreviewInSolutionExplorer": false
 }
